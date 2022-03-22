@@ -7,3 +7,10 @@ TextStyle buttonText = TextStyle(
   color: AppTheme.primary,
   fontFamily: 'PressStart2P',
 );
+
+TextStyle buttonTextSm = TextStyle(
+  fontSize: 10,
+  color: AppTheme.primary,
+  fontFamily: 'PressStart2P',
+  fontWeight: FontWeight.bold,
+);

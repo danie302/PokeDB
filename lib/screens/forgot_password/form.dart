@@ -44,49 +44,15 @@ class _Form extends StatelessWidget {
                         },
                       ),
                       const SizedBox(height: 20),
-                      TextFormField(
-                        obscureText: true,
-                        autocorrect: false,
-                        keyboardType: TextInputType.visiblePassword,
-                        onChanged: (value) => {},
-                        decoration: styles.inputs.copyWith(
-                          hintText: '*******',
-                          labelText: 'Password',
-                        ),
-                        validator: (value) {
-                          return value!.length > 6
-                              ? null
-                              : 'Minimum 6 characters';
-                        },
-                      ),
-                      const SizedBox(height: 20),
                       Button(
                         height: 45,
                         minWidth: 180,
-                        text: 'Sign In',
-                        onPressed: () {},
-                      ),
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          primary: AppTheme.secondary,
-                        ),
+                        textStyle: styles.buttonTextSm,
+                        text: 'Send Password Reset Link',
                         onPressed: () => locator<NavigationService>()
-                            .navigateTo(ForgotPasswordScreen.routeName),
-                        child: const Text(
-                          'Forgot password?',
-                        ),
+                            .navigateTo(LoginScreen.routeName),
                       ),
                       const SizedBox(height: 20),
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          primary: AppTheme.secondary,
-                        ),
-                        onPressed: () => locator<NavigationService>()
-                            .navigateTo(RegisterScreen.routeName),
-                        child: const Text(
-                          'Don`t have an account? Sign up',
-                        ),
-                      ),
                     ],
                   ),
                 ),

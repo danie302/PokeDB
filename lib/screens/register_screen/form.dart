@@ -91,10 +91,11 @@ class _Form extends StatelessWidget {
                         },
                       ),
                       const SizedBox(height: 20),
-                      const Button(
-                        text: 'Sign Up',
-                        minWidth: 180,
+                      Button(
                         height: 45,
+                        minWidth: 180,
+                        text: 'Sign Up',
+                        onPressed: () {},
                       ),
                       const SizedBox(height: 20),
                       TextButton(

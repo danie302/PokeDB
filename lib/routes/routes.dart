@@ -15,6 +15,10 @@ class AppRoutes {
       routeName: RegisterScreen.routeName,
       screen: const RegisterScreen(),
     ),
+    RouteScreen(
+      routeName: ForgotPasswordScreen.routeName,
+      screen: const ForgotPasswordScreen(),
+    ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

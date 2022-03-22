@@ -4,11 +4,15 @@ import 'package:pokedb/themes/theme.dart';
 import 'package:pokedb/styles/styles.dart' as styles;
 
 class Button extends StatelessWidget {
+  final String text;
   final double height;
   final double minWidth;
-  final String text;
+  final TextStyle? textStyle;
+  final VoidCallback? onPressed;
   const Button({
     Key? key,
+    this.onPressed,
+    this.textStyle,
     this.height = 20,
     this.minWidth = 50,
     required this.text,
@@ -22,8 +26,8 @@ class Button extends StatelessWidget {
       color: AppTheme.secondary,
       textColor: AppTheme.primary,
       shape: const StadiumBorder(),
-      child: Text(text, style: styles.buttonText),
-      onPressed: () {},
+      child: Text(text, style: textStyle ?? styles.buttonText),
+      onPressed: onPressed,
     );
   }
 }
