@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static final Color primary = Colors.red[600]!;
+  static const Color secondary = Color.fromARGB(255, 255, 204, 0);
   static final Color success = Colors.green[400]!;
   static final Color warning = Colors.yellow[800]!;
   static final Color danger = Colors.red[800]!;
@@ -43,6 +44,10 @@ class AppTheme {
     ),
     listTileTheme: ListTileThemeData(
       iconColor: primary,
+    ),
+    buttonTheme: const ButtonThemeData(
+      buttonColor: secondary,
+      textTheme: ButtonTextTheme.primary,
     ),
   );
 }
