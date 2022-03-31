@@ -10,7 +10,7 @@ import 'package:pokedb/styles/styles.dart' as styles;
 part 'form.dart';
 
 class LoginScreen extends StatelessWidget {
-  static String routeName = 'login';
+  static const String routeName = 'login';
   const LoginScreen({Key? key}) : super(key: key);
 
   @override

@@ -64,7 +64,8 @@ class _Form extends StatelessWidget {
                         height: 45,
                         minWidth: 180,
                         text: 'Sign In',
-                        onPressed: () {},
+                        onPressed: () => locator<NavigationService>()
+                            .navigateTo(HomeScreen.routeName),
                       ),
                       TextButton(
                         style: TextButton.styleFrom(

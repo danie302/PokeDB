@@ -4,7 +4,7 @@ import 'package:pokedb/models/models.dart';
 import 'package:pokedb/screens/screens.dart';
 
 class AppRoutes {
-  static final initialRoute = LoginScreen.routeName;
+  static const initialRoute = LoginScreen.routeName;
 
   static final routesList = <RouteScreen>[
     RouteScreen(
@@ -18,6 +18,10 @@ class AppRoutes {
     RouteScreen(
       routeName: ForgotPasswordScreen.routeName,
       screen: const ForgotPasswordScreen(),
+    ),
+    RouteScreen(
+      routeName: HomeScreen.routeName,
+      screen: const HomeScreen(),
     ),
   ];
 
